@@ -196,6 +196,45 @@ h2 {
     background-image: url(../imagenes/diseñoweb2.jpg);
 }
 
+.imagenes {
+    display: grid;
+    grid-template-columns: repeat(4, 20%);
+    grid-template-rows: 400px;
+    height: 500px;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+
+.img4, .img5, .img6, .img7 {
+    background-repeat: no-repeat;
+    background-size: contain;
+    filter: grayscale(80%);
+}
+
+.img4 {
+    background-image: url(../imagenes/tiro-medio-mujer-morena-leyendo-interior.jpg);
+}
+
+.img5 {
+    background-image: url(../imagenes/mujer-feliz-que-sostiene-caja-pedido-linea.jpg);
+    background-position: bottom;
+}
+
+.img6 {
+    background-image: url(../imagenes/protatil.jpg);
+} 
+
+.img7 {
+    background-image: url(../imagenes/OBFJDT0.jpg);
+    background-position: bottom;
+}
+
+.frase2 {
+    height: 200px;
+    width: 100%;
+    background: linear-gradient(to left, salmon, white);
+}
+
 .contacto {
     display: grid;
     grid-template-columns: repeat(2, 50%);
@@ -245,6 +284,22 @@ h2 {
 
 .boton:hover{
     color: salmon;
+}
+
+.blog {
+    color: black;
+    height: 80px;
+    border: 2px solid salmon;
+    text-align: center;
+    padding: 20px;
+}
+
+.blog1 { 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 2px salmon;
 }
 
 
