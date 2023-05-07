@@ -153,6 +153,30 @@ h2 {
     font-size: 20px;
 }
 
+.nosotros {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: 600px;
+}
+
+.nosotros span {
+    font-size: 30px;
+    color: salmon;
+}
+
+.nosotros p {
+    margin: 40px;
+    text-align: left;
+    line-height: 2;
+    font-size: 25px;
+}
+
+.carrusel {
+    width: 90%;
+    margin: 40px;
+}
+
+
 .servicios1 {
     display: grid;
     width: 100%;
@@ -299,7 +323,7 @@ h2 {
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    border: 2px salmon;
+    margin: 20px;
 }
 
 
@@ -341,4 +365,33 @@ h2 {
 
 .subir:hover {
     color: salmon;
+}
+
+
+@media screen and (min-whidt:768px) {
+    cuerpo {
+        grid-template-columns: 1;
+        grid-template-rows: repeat(2, 100%);
+    }
+}
+
+@media only screen and (min-whidt:768px) { 
+    .blog1 {
+        grid-template-columns: repeat(3);
+        grid-template-rows: repeat(2, 40%);
+    }
+}
+
+@media only screen and (min-whidt:768px) {
+    .productos {
+        grid-template-columns: 1;
+        grid-template-rows: repeat(3, 800px);
+    }
+}
+
+@media only screen and (min-whidt:768px) {
+    .formulario {
+        grid-template-columns: 1;
+        grid-template-rows: repeat(2, 800px);
+    }
 }
